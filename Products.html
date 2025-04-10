@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceCo : Products</title>
+    <link rel="icon" type="image/x-icon" href="FaceCo logo.png">
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="FaceCo logo.png" alt="FaceCo Logo">
+    </div>
+
+    <nav class="navbar">
+        <a href="Homeepage.html"><i class="fas fa-home"></i> Home</a>
+        <a href="products.html" class="active"><i class="fas fa-shopping-cart"></i> Products</a>
+        <a href="FaceCo.html"><i class="fas fa-camera"></i> Skin Analysis</a>
+        <a href="skincare-tips.html"><i class="fas fa-info-circle"></i> Skincare Tips</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="account.html"><i class="fas fa-user"></i> Account</a>
+        <div class="cart-container">
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="products-container">
+        <h1>Our Skincare Products</h1>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="cleanser">Cleansers</button>
+            <button class="filter-btn" data-filter="moisturizer">Moisturizers</button>
+            <button class="filter-btn" data-filter="serum">Serums</button>
+            <button class="filter-btn" data-filter="sunscreen">Sunscreens</button>
+        </div>
+
+        <div class="products-grid">
+            <!-- Cleansers -->
+            <div class="product-card" data-category="cleanser">
+                <img src="Cleanser.png" alt="Gentle Cleanser">
+                <h3>Gentle Foaming Cleanser</h3>
+                <p>Perfect for all skin types</p>
+                <span class="price">249.99 Rs.</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Moisturizers -->
+            <div class="product-card" data-category="moisturizer">
+                <img src="Moisturizer.png" alt="Hydrating Moisturizer">
+                <h3>Deep Hydration Cream</h3>
+                <p>24-hour moisture lock</p>
+                <span class="price">300.00 Rs.</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Serums -->
+            <div class="product-card" data-category="serum">
+                <img src="Serum.png" alt="Vitamin C Serum">
+                <h3>Vitamin C Brightening Serum</h3>
+                <p>Brightens and evens skin tone</p>
+                <span class="price">340.50 Rs.</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Sunscreens -->
+            <div class="product-card" data-category="sunscreen">
+                <img src="Sunscreen.png" alt="Daily Sunscreen">
+                <h3>Daily Protection SPF 50</h3>
+                <p>Lightweight, non-greasy formula</p>
+                <span class="price">450.00 Rs.</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Add more product cards as needed -->
+        </div>
+    </main>
+   
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About FaceCo</h4>
+                <p>Your trusted partner in skincare, combining technology with dermatological expertise.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Skincare tips.html">Skincare Tips</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping Info</a></li>
+                    <li><a href="returns.html">Returns</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FaceCo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Products.js"></script>
+</body>
+</html>

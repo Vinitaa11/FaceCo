@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Your Skin - FaceCo</title>
+    <link rel="icon" type="image/x-icon" href="FaceCo logo.png">
+    <link rel="stylesheet" type="text/css" href="FaceCo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="analysis-page">
+    <div class="logo">
+        <img src="FaceCo logo.png" class="center" style="width:200px;height:200px;" alt="FaceCo logo">
+    </div>
+    <main class="container">
+        <section class="skin-analysis">
+            <h2>Skin Analysis Tool</h2>
+            <p class="text-center">Take a photo of your skin to get personalized skincare recommendations</p>
+
+            <div class="camera-section">
+                <div class="video-container">
+                    <video id="video" width="400" height="300" autoplay></video>
+                </div>
+                <div class="capture-controls">
+                    <button id="capture" class="btn">Capture Image</button>
+                    <div class="canvas-container">
+                        <canvas id="canvas" width="400" height="300"></canvas>
+                    </div>
+                    <a href="skinresults.html" class="btn analyze">Analyze</a>
+                </div>
+               </section>
+    </main>
+    <script src="FaceCo.js"></script>
+</body>
+</html>

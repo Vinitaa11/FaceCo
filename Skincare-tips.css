@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('Faceco\ background\ image.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: -1;
+}
+
+.logo {
+    padding: 20px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    background-color: #0d0101;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #4CAF50;
+}
+
+.tips-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin: 40px 0;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.tip-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-icon {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.routine-section {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.routine-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.step h4 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.step ol {
+    padding-left: 20px;
+}
+
+.step li {
+    margin: 10px 0;
+}
+
+.skin-types {
+    margin: 40px 0;
+}
+
+.type-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.type-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.type-card h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.type-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.type-card li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.type-card li::before {
+    content: '•';
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0 0 0;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section h4 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #4CAF50;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4CAF50;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #222;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .navbar a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .routine-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
